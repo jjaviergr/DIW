@@ -1,0 +1,40 @@
+ 
+ 
+
+
+
+
+.blanco { color: white; }
+.destacado { font-size: 50px; }
+.especial  { font-weight: bold; }
+
+font { padding: 0.5em 2em 0.25em 2em
+     }
+
+#curva_a { border-bottom-right-radius:  50%;         
+		  background: #464646;
+		 
+         }
+
+#curva_b { border-bottom-right-radius: 25%;          
+		  background: #464646;
+		  
+         }
+		 
+#curva_c { border-bottom-right-radius: 12.5%;          
+		  background: #464646;
+		  
+         }
+		 
+#curva_d { border-radius: 20% 55% 20% 55%;          
+		  background: #464646;
+         }
+		 
+#curva_e{ border-radius: 15% 15%  15% 15% ;          
+		  background: #464646;
+         }
+		 
+#curva_f{ border-radius: 100% 100% 100% 100%;          
+		  background: #464646;
+		  padding: 0.25em 0.75em 0.25em 0.75em
+         }
