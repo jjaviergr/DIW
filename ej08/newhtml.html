@@ -4,11 +4,13 @@
      <meta charset="UTF-8">
     <title>Ejercicio de pseudo-clases</title>
     
-    <style type="text/css">
-        a:link {text-decoration:none; color: red}
-        a:link:visited { color :orange;}
+    <style >
+        /*
+        a:visited{color : #CCC;}
         a:hover {text-decoration:none;color:#FFF; background-color: #CC0000}
-        /* 
+        a:link{color : #CC0000;}*/
+         /*.alternativo {color: #CC0000;}
+        
         li:first-child,li:last-child {color :blue}
          li:first-child { font-size: 14}
          li:nth-of-type(2) { font-size: 18}         
@@ -16,6 +18,14 @@
          li:nth-of-type(4) { font-size: 26}
          li:last-child { font-size: 30}
         */
+        
+        /* unvisited link */
+        a:link {color: red;}        
+        a:visited {color: #CCC;}
+        a:hover {text-decoration:none;color:white; background-color: red;}
+
+        
+        
     </style>
     <!-- ol, ul, dl {color:blue} -->
     <!-- <link rel="stylesheet" href=miestilo.cssâ€³ type="text/css" /> -->
@@ -23,17 +33,15 @@
    
 </head>
 <body>
-    <a href="">Inicio</a>
+    
+    <!--<a class="alternativo" href="#">Enlace de color rojo</a>-->
     <ul>
-        <li><a href="">Inicio</a></li>
-        <li><a  href="">Noticias</a></li>
-        <ul>
-            
-           <li><a  href="">Recientes</a></li>
-           <li><a  href="">Más leídas</a></li>
-           <li><a  href="">Más valoradas</a></li>
-         
-        </ul> 
+        <li><a href="http://www.w3schools.com">Inicio</a></li>
+        <li><a  href="http://www.w3schools.com">Noticias</a></li>                    
+        <ul>  <li><a  href="http://www.w3schools.com">Recientes</a></li>
+           <li><a href="http://www.w3schools.com">Más leídas</a></li>
+           <li><a  href="http://www.w3schools.com">Más valoradas</a></li>                  
+        </ul>
     </ul>
 </body>
 </html>
