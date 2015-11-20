@@ -20,6 +20,8 @@
         */
         
         /* unvisited link */
+        #normal { font-weight: normal;}
+        #negrita {font-weight: bold;font-weight: 900;}
         a:link {color: red;}        
         a:visited {color: #CCC;}
         a:hover {text-decoration:none;color:white; background-color: red;}
@@ -36,12 +38,14 @@
     
     <!--<a class="alternativo" href="#">Enlace de color rojo</a>-->
     <ul>
-        <li><a href="http://www.w3schools.com">Inicio</a></li>
-        <li><a  href="http://www.w3schools.com">Noticias</a></li>                    
-        <ul>  <li><a  href="http://www.w3schools.com">Recientes</a></li>
-           <li><a href="http://www.w3schools.com">Más leídas</a></li>
-           <li><a  href="http://www.w3schools.com">Más valoradas</a></li>                  
+        <li><div id="normal">Inicio</div></li>
+        <li<div id="negrita">Noticias</div>     
+        <div id="normal">  
+        <ul>  <li><a  href="http://www.loquesea.com">Recientes</a></li>
+           <li><a href="http://www.cualquiersitio.com">Más leídas</a></li>
+           <li><a  href="http://www.unapagina.com">Más valoradas</a></li>                  
         </ul>
+        </div>
     </ul>
 </body>
 </html>
