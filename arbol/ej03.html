@@ -1,0 +1,112 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Ejercicio 3 - Animacion CSS</title>
+        <style type="text/css" media="screen">
+            
+        #container
+        {		
+            background: #666 url(ej03_tree.jpg) no-repeat -60px 0;;
+            width: 420px;
+            height: 480px;		
+            position: relative;	
+        }
+
+        @-webkit-keyframes nieve
+        {
+                from {top: -10px;}
+                to {top: 450px;}
+        }
+
+        @-webkit-keyframes copos
+        {
+            0%   { -webkit-transform: rotate(-180deg) translate(0px, 0px);}
+            100% { -webkit-transform: rotate(180deg) translate(10px, 75px);}
+        }
+        
+        #snow div 
+        {
+                position: absolute;
+                top: -40px;
+                -webkit-animation-name: nieve, copos;
+                -webkit-animation-iteration-count: infinite; 
+                -webkit-animation-direction: normal; 
+                -webkit-animation-timing-function: ease-in;
+        }
+        .copos 
+        {
+                color: #fff;
+                font-size: 1em;
+                position: absolute;	
+        }
+        .copos.f1 
+        {
+                left: 40px;
+                -webkit-animation-duration: 5s;	
+        }
+        .copos.f2 
+        {
+                font-size: 1.8em;
+                left: 120px;
+                -webkit-animation-duration: 7s;	
+        }
+        .copos.f3 
+        {
+                left: 200px;
+                -webkit-animation-duration: 8s;	
+        }
+        .copos.f4 
+        {
+                font-size: 1.5em;
+                left: 280px;
+                -webkit-animation-duration: 6s;	
+        }
+		
+                
+        /*
+        #container{
+            background: #666 url(ej03_tree.jpg) no-repeat -60px 0;
+            width: 420px;
+            height: 480px;
+            position: relative;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+        }
+        .snowflake.f1 {
+            left: 40px;
+        }
+        .snowflake.f2 {
+            font-size: 1.8em;
+            left: 120px;
+        }
+        .snowflake.f3 {
+            left: 200px;
+        }
+        .snowflake.f4 {
+            font-size: 1.5em;
+            left: 280px;
+        }
+        */
+        </style>
+    </head>
+    <body>
+        <div id="container">
+
+<div id="snow" class="snow">   
+   <div class="copos f1">&#10053;</div> 
+   <div class="copos f2">&#10052;</div> 
+   <div class="copos f3">&#10053;</div> 
+   <div class="copos f4">&#10052;</div> 
+</div> 
+<div id="ground"></div> 
+
+</div>
+
+    </body>
+</html>
