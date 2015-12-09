@@ -1,0 +1,251 @@
+body {
+    background: #f9f9f9 url(../img/white_texture.jpg) repeat top left;
+    color: #333;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 13px;
+}
+
+.main {
+    width: 690px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.vista {
+   width: 300px;
+   height: 200px;
+   margin: 10px;
+   float: left;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: pointer;
+}
+.vista .mascara, .vista .contenido {
+   width: 300px;
+   height: 200px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.vista .mascara {
+   background-color: rgba(219,127,8, 0.7);
+}
+.vista img {
+   display: block;
+   position: relative;
+   width: 300px;
+}
+.vista h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 20px 0 0 0;
+}
+.vista p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 12px;
+   position: relative;
+   color: #fff;
+   padding: 10px;
+   text-align: center;
+}
+.vista a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #000;
+   color: #fff;
+   text-transform: uppercase;
+   box-shadow: 0 0 1px #000;
+}
+.vista a.info  hover {
+   box-shadow: 0 0 5px #000;
+}
+
+
+@-webkit-keyframes colorfondo{
+    from {color:rgba(0,0,0,1)}
+    to {color: rgba(219,127,8, 0.7);}
+}
+
+
+.vista .mascara {
+   display: none;
+}
+
+
+
+.vista:hover{
+  transform:scale(1.2);
+  transition:all 0.5s ease-in-out 0.1s;
+  -webkit-transform:scale(1.2);
+  -webkit-transition:all 0.5s ease-in-out 0.1s;
+  -moz-transform:scale(1.2);
+  -moz-transition:all 0.5s ease-in-out 0.1s;
+  -ms-transform:scale(1.2);
+  -ms-transition:all 0.5s ease-in-out 0.1s;
+  -o-transform:scale(1.2);
+  -o-transition:all 0.5s ease-in-out 0.1s;
+ }
+
+
+ .vista:hover .mascara h2{
+  display: inline-block;
+  animation: autor 0.5s ease;
+  -webkit-animation: autor 0.5s ease;
+  -moz-animation: autor 0.5s ease;
+  -ms-animation: autor 0.5s ease;
+  -o-animation: autor 0.5s ease;
+ }
+@keyframes autor{
+    from {top:-100px;}
+    to {top:0px;}
+}
+@-webkit-keyframes autor{
+    from {top:-100px;}
+    to {top:0px;}
+}
+@-moz-keyframes autor{
+    from {top:-100px;}
+    to {top:0px;}
+}
+@-ms-keyframes autor{
+    from {top:-100px;}
+    to {top:0px;}
+}
+@-o-keyframes autor{
+    from {top:-100px;}
+    to {top:0px;}
+}
+
+
+
+
+
+ .vista:hover .mascara p{
+  display: inline-block;
+  animation: texto 0.5s ease;
+  -webkit-animation: texto 0.5s ease;
+  -moz-animation: texto 0.5s ease;
+  -ms-animation: texto 0.5s ease;
+  -o-animation: texto 0.5s ease;
+ }
+ @keyframes texto{
+    from {bottom:-100px;}
+    to {bottom:0px;}
+}
+ @-webkit-keyframes texto{
+    from {bottom:-100px;}
+    to {bottom:0px;}
+}
+@-moz-keyframes texto{
+    from {bottom:-100px;}
+    to {bottom:0px;}
+}
+@-ms-keyframes texto{
+    from {bottom:-100px;}
+    to {bottom:0px;}
+}
+ @-o-keyframes texto{
+    from {bottom:-100px;}
+    to {bottom:0px;}
+}
+
+
+
+
+ .vista:hover .mascara a{
+  display: inline-block;
+  animation: enlace 1.5s ease;
+  -webkit-animation: enlace 1.5s ease;
+  -moz-animation: enlace 1.5s ease;
+  -ms-animation: enlace 1.5s ease;
+  -o-animation: enlace 1.5s ease;
+ }
+ @keyframes enlace{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(0,0,0,0);}
+    50%{color: rgba(0,0,0,0.5);}
+    to {background-color: rgba(0,0,0,1);}
+}
+ @-webkit-keyframes enlace{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(0,0,0,0);}
+    50%{color: rgba(0,0,0,0.5);}
+    to {background-color: rgba(0,0,0,1);}
+}
+@-moz-keyframes enlace{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(0,0,0,0);}
+    50%{color: rgba(0,0,0,0.5);}
+    to {background-color: rgba(0,0,0,1);}
+}
+@-ms-keyframes enlace{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(0,0,0,0);}
+    50%{color: rgba(0,0,0,0.5);}
+    to {background-color: rgba(0,0,0,1);}
+}
+@-o-keyframes enlace{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(0,0,0,0);}
+    50%{color: rgba(0,0,0,0.5);}
+    to {background-color: rgba(0,0,0,1);}
+}
+
+
+
+
+ .vista:hover .mascara {
+  display: inline-block;
+  animation: fondo 1.5s ease;
+  -webkit-animation: fondo 1.5s ease;
+  -moz-animation: fondo 1.5s ease;
+  -ms-animation: fondo 1.5s ease;
+  -o-animation: fondo 1.5s ease;
+ }
+ @keyframes fondo{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(219,127,8, 0.1);}
+    50%{color: rgba(219,127,8, 0.4);}
+    to {background-color: rgba(219,127,8, 0.7);}
+}
+ @-webkit-keyframes fondo{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(219,127,8, 0.1);}
+    50%{color: rgba(219,127,8, 0.4);}
+    to {background-color: rgba(219,127,8, 0.7);}
+}
+ @-moz-keyframes fondo{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(219,127,8, 0.1);}
+    50%{color: rgba(219,127,8, 0.4);}
+    to {background-color: rgba(219,127,8, 0.7);}
+}
+@-ms-keyframes fondo{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(219,127,8, 0.1);}
+    50%{color: rgba(219,127,8, 0.4);}
+    to {background-color: rgba(219,127,8, 0.7);}
+}
+@-o-keyframes fondo{
+    from {background-color: rgba(0,0,0,0);}
+    1%{color: rgba(219,127,8, 0.1);}
+    50%{color: rgba(219,127,8, 0.4);}
+    to {background-color: rgba(219,127,8, 0.7);}
+}
+
+
+
+
+
+
